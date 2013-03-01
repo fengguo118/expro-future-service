@@ -9,21 +9,13 @@
 			"id": "name",
 			"order": 0
 		},
-		"fullName": {
-			"name": "fullName",
-			"type": "string",
-			"typeLabel": "string",
-			"required": true,
-			"id": "fullName",
-			"order": 1
-		},
 		"address": {
 			"name": "address",
 			"type": "string",
 			"typeLabel": "string",
 			"required": false,
 			"id": "address",
-			"order": 2
+			"order": 1
 		},
 		"telephone": {
 			"name": "telephone",
@@ -31,30 +23,38 @@
 			"typeLabel": "string",
 			"required": false,
 			"id": "telephone",
-			"order": 3
+			"order": 2
 		},
-		"zip": {
-			"name": "zip",
-			"type": "string",
-			"typeLabel": "string",
-			"required": false,
-			"id": "zip",
-			"order": 4
-		},
-		"email": {
-			"name": "email",
-			"type": "string",
-			"typeLabel": "string",
-			"required": false,
-			"id": "email",
-			"order": 5
-		},
-		"stores": {
-			"name": "stores",
+		"employees": {
+			"name": "employees",
 			"type": "array",
 			"typeLabel": "array",
 			"required": true,
-			"id": "stores",
+			"id": "employees",
+			"order": 3
+		},
+		"stocks": {
+			"name": "stocks",
+			"type": "array",
+			"typeLabel": "array",
+			"required": true,
+			"id": "stocks",
+			"order": 4
+		},
+		"sales": {
+			"name": "sales",
+			"type": "array",
+			"typeLabel": "array",
+			"required": true,
+			"id": "sales",
+			"order": 5
+		},
+		"deals": {
+			"name": "deals",
+			"type": "array",
+			"typeLabel": "array",
+			"required": true,
+			"id": "deals",
 			"order": 6
 		}
 	}

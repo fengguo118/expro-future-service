@@ -1,44 +1,44 @@
 {
-	"type": "Collection",
+	"type": "UserCollection",
 	"properties": {
-		"name": {
-			"name": "name",
+		"displayName": {
+			"name": "displayName",
 			"type": "string",
 			"typeLabel": "string",
-			"required": true,
-			"id": "name",
+			"required": false,
+			"id": "displayName",
 			"order": 0
 		},
-		"fullName": {
-			"name": "fullName",
+		"phone": {
+			"name": "phone",
 			"type": "string",
 			"typeLabel": "string",
-			"required": true,
-			"id": "fullName",
+			"required": false,
+			"id": "phone",
 			"order": 1
 		},
-		"address": {
-			"name": "address",
+		"idcard": {
+			"name": "idcard",
 			"type": "string",
 			"typeLabel": "string",
 			"required": false,
-			"id": "address",
+			"id": "idcard",
 			"order": 2
 		},
-		"telephone": {
-			"name": "telephone",
-			"type": "string",
-			"typeLabel": "string",
+		"male": {
+			"name": "male",
+			"type": "boolean",
+			"typeLabel": "boolean",
 			"required": false,
-			"id": "telephone",
+			"id": "male",
 			"order": 3
 		},
-		"zip": {
-			"name": "zip",
+		"birthday": {
+			"name": "birthday",
 			"type": "string",
 			"typeLabel": "string",
 			"required": false,
-			"id": "zip",
+			"id": "birthday",
 			"order": 4
 		},
 		"email": {
@@ -49,12 +49,12 @@
 			"id": "email",
 			"order": 5
 		},
-		"stores": {
-			"name": "stores",
+		"roles": {
+			"name": "roles",
 			"type": "array",
 			"typeLabel": "array",
 			"required": true,
-			"id": "stores",
+			"id": "roles",
 			"order": 6
 		}
 	}
