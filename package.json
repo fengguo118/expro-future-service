@@ -1,0 +1,29 @@
+{
+  "name": "expro-future-service",
+  "version": "0.0.1",
+  "description": "expro future service for mobile and web front",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_module/.bin/mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/guanbo/expro-future-service.git"
+  },
+  "keywords": [
+    "expro",
+    "pos"
+  ],
+  "author": "extensivepro Inc",
+  "license": "BSD",
+  "gitHead": "d4a041a1856272b92661b25f87b1b7b9347beca2",
+  "dependencies": {
+    "dpd-event": "~0.0.2",
+    "dpd-email": "0.0.1"
+  },
+  "devDependencies": {
+    "mocha": "~1.8.1",
+    "request": "~2.14.0",
+    "should": "~1.2.2"
+  }
+}

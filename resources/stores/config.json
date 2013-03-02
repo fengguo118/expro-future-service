@@ -25,12 +25,12 @@
 			"id": "telephone",
 			"order": 2
 		},
-		"employees": {
-			"name": "employees",
+		"employes": {
+			"name": "employes",
 			"type": "array",
 			"typeLabel": "array",
 			"required": true,
-			"id": "employees",
+			"id": "employes",
 			"order": 3
 		},
 		"stocks": {
