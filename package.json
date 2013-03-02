@@ -4,7 +4,7 @@
   "description": "expro future service for mobile and web front",
   "main": "index.js",
   "scripts": {
-    "test": "./node_module/.bin/mocha"
+    "test": "./node_modules/.bin/mocha"
   },
   "repository": {
     "type": "git",
