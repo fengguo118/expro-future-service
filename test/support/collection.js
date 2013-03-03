@@ -8,13 +8,15 @@ function Collection(pathname) {
 		pathname:'/'+pathname
 	}
 	this.url = require('url').format(urlObj)
+	this.json = true
 }
 
 Collection.prototype.request = function (options, fn) {
   var url = this.url
 
   options.url = url + (options.url || '')
-	console.log(options)
+	options.json = options.json||this.json
+	// console.log(options)
   request(options, fn);
 }
 
