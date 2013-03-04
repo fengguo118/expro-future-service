@@ -1,0 +1,69 @@
+{
+	"type": "Collection",
+	"properties": {
+		"createAt": {
+			"name": "createAt",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "createAt",
+			"order": 0
+		},
+		"seller": {
+			"name": "seller",
+			"type": "object",
+			"typeLabel": "object",
+			"required": true,
+			"id": "seller",
+			"order": 1
+		},
+		"buyer": {
+			"name": "buyer",
+			"type": "object",
+			"typeLabel": "object",
+			"required": false,
+			"id": "buyer",
+			"order": 2
+		},
+		"item": {
+			"name": "item",
+			"type": "object",
+			"typeLabel": "object",
+			"required": true,
+			"id": "item",
+			"order": 3
+		},
+		"quantity": {
+			"name": "quantity",
+			"type": "number",
+			"typeLabel": "number",
+			"required": true,
+			"id": "quantity",
+			"order": 4
+		},
+		"fee": {
+			"name": "fee",
+			"type": "number",
+			"typeLabel": "number",
+			"required": true,
+			"id": "fee",
+			"order": 5
+		},
+		"payType": {
+			"name": "payType",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "payType",
+			"order": 6
+		},
+		"memo": {
+			"name": "memo",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "memo",
+			"order": 7
+		}
+	}
+}

@@ -6,15 +6,9 @@ var Collection = require('./support/collection')
 	roles:['consumer','employe', 'administrator']
 }
 
-var login = function(done) {
-  c.post({url:'/login', json:user}, function(err, res, body){
-		res.should.have.status(200)
-		if(done) done()
-  })
-}
-
 before(function(done){
   c.post({json:user}, function(err, res, body){
+		// console.log(body)
 		res.should.have.status(200)
 		user.id = body.id;
 		done()
@@ -22,7 +16,7 @@ before(function(done){
 })
 
 after(function(done){
-	login(function(){
+	c.login(function(){
 	  c.del({url:'/'+user.id}, function(err, res){
 			res.should.have.status(200)
 			done()
@@ -32,7 +26,7 @@ after(function(done){
 
 describe('User', function(){
 	before(function(done){
-	  login(done)
+	  c.login(done)
 	})
   it('should success got Current user', function(done){
     c.get({url:'/me'}, function(err, res, body){
@@ -44,6 +38,7 @@ describe('User', function(){
   })
 	it('should GET Users List by authroization', function(done){
 		c.get({}, function(err,res, body){
+			// console.log(body)
 			res.should.have.status(200)
 			body.should.be.an.instanceOf(Array)
 			body.length.should.above(0)

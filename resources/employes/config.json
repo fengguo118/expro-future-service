@@ -1,0 +1,45 @@
+{
+	"type": "Collection",
+	"properties": {
+		"userID": {
+			"name": "userID",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "userID",
+			"order": 0
+		},
+		"shopID": {
+			"name": "shopID",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "shopID",
+			"order": 1
+		},
+		"createAt": {
+			"name": "createAt",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "createAt",
+			"order": 2
+		},
+		"leaveAt": {
+			"name": "leaveAt",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "leaveAt",
+			"order": 3
+		},
+		"status": {
+			"name": "status",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "status",
+			"order": 4
+		}
+	}
+}

@@ -25,29 +25,37 @@
 			"id": "telephone",
 			"order": 2
 		},
+		"merchantID": {
+			"name": "merchantID",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "merchantID",
+			"order": 3
+		},
 		"employes": {
 			"name": "employes",
 			"type": "array",
 			"typeLabel": "array",
 			"required": true,
 			"id": "employes",
-			"order": 3
-		},
-		"stocks": {
-			"name": "stocks",
-			"type": "array",
-			"typeLabel": "array",
-			"required": true,
-			"id": "stocks",
 			"order": 4
 		},
-		"sales": {
-			"name": "sales",
+		"skus": {
+			"name": "skus",
 			"type": "array",
 			"typeLabel": "array",
 			"required": true,
-			"id": "sales",
+			"id": "skus",
 			"order": 5
+		},
+		"items": {
+			"name": "items",
+			"type": "array",
+			"typeLabel": "array",
+			"required": true,
+			"id": "items",
+			"order": 6
 		},
 		"deals": {
 			"name": "deals",
@@ -55,7 +63,15 @@
 			"typeLabel": "array",
 			"required": true,
 			"id": "deals",
-			"order": 6
+			"order": 7
+		},
+		"createdAt": {
+			"name": "createdAt",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "createdAt",
+			"order": 8
 		}
 	}
 }

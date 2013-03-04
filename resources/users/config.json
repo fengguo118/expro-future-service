@@ -56,6 +56,14 @@
 			"required": true,
 			"id": "roles",
 			"order": 6
+		},
+		"createdAt": {
+			"name": "createdAt",
+			"type": "number",
+			"typeLabel": "number",
+			"required": false,
+			"id": "createdAt",
+			"order": 7
 		}
 	}
 }

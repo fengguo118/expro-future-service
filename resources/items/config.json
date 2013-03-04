@@ -1,0 +1,53 @@
+{
+	"type": "Collection",
+	"properties": {
+		"name": {
+			"name": "name",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "name",
+			"order": 0
+		},
+		"desc": {
+			"name": "desc",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "desc",
+			"order": 1
+		},
+		"shop": {
+			"name": "shop",
+			"type": "object",
+			"typeLabel": "object",
+			"required": true,
+			"id": "shop",
+			"order": 2
+		},
+		"price": {
+			"name": "price",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "price",
+			"order": 3
+		},
+		"proudct": {
+			"name": "proudct",
+			"type": "object",
+			"typeLabel": "object",
+			"required": false,
+			"id": "proudct",
+			"order": 4
+		},
+		"createdAt": {
+			"name": "createdAt",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "createdAt",
+			"order": 5
+		}
+	}
+}

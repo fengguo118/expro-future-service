@@ -1,13 +1,19 @@
 var request = require('request')
+, user = {
+	username:'18912345678',
+	password:'123456',
+	roles:['consumer','employe', 'administrator']
+}
 
-function Collection(pathname) {
-  var urlObj = {
+function Collection(resource) {
+	this.resource = resource
+  this.urlObj = {
 		protocol:'http',
 		hostname:'localhost',
 		port:'2403',
-		pathname:'/'+pathname
+		pathname:'/'+resource
 	}
-	this.url = require('url').format(urlObj)
+	this.url = require('url').format(this.urlObj)
 	this.json = true
 }
 
@@ -38,6 +44,16 @@ Collection.prototype.put = function (options, fn) {
 Collection.prototype.del = function (options, fn) {
 	options.method = 'DELETE'
 	this.request(options, fn)
+}
+
+Collection.prototype.login = function(fn) {
+	this.urlObj.pathname = 'users/login'
+	var url = require('url').format(this.urlObj)
+  request({url:url, json:user, method:'POST'}, function(err, res, body){
+		if(res.statusCode !== 200) console.log(body)
+		res.should.have.status(200)
+		if(fn) fn()
+  })	
 }
 
 exports = module.exports = Collection

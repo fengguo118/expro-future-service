@@ -49,13 +49,21 @@
 			"id": "email",
 			"order": 5
 		},
-		"stores": {
-			"name": "stores",
+		"shops": {
+			"name": "shops",
 			"type": "array",
 			"typeLabel": "array",
 			"required": true,
-			"id": "stores",
+			"id": "shops",
 			"order": 6
+		},
+		"createdAt": {
+			"name": "createdAt",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "createdAt",
+			"order": 7
 		}
 	}
 }
