@@ -1,11 +1,11 @@
-#expro-future-service
+#Expro Future Service
 ====================
 
-## overview
+## Overview
 expro future web service for mobile and web front, restful style base on [**deployd**](https://github.com/deployd/deployd)
 
 
-## deployd install osx
+## Deployd install osx
 
 [Download](http://deployd.com/download.html) the installer.
 
@@ -18,4 +18,9 @@ expro future web service for mobile and web front, restful style base on [**depl
 
 ##Test
 	$ mocha test
+	
+##ToDo
+- [x] complete model design
+- [ ] finish all test scripts
+	
 
